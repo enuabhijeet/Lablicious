@@ -1,0 +1,189 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+  padding-bottom: 80px; /* space for footer */
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+/* About Section */
+#about {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Vision/Mission/Expectations */
+.vm-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.vm-box {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem;
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 250px; /* Made boxes bigger */
+}
+
+.vm-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Founder Section */
+#founder {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+#founder h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.founder-thoughts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.thought-text {
+  flex: 3;
+  font-size: 1.1rem;
+}
+
+.thought-img {
+  flex: 1;
+  text-align: right;
+}
+
+.thought-img img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Q&A Section */
+#faq {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+#faq h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item h4 {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .founder-thoughts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .thought-img {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .vm-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
