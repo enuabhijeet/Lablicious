@@ -159,16 +159,25 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: #eee;
+  background: linear-gradient(to right, #f9f871, #fbc2eb); /* Light bright gradient */
+  color: #333; /* Dark text for readability */
   text-align: center;
   padding: 1rem 0;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+footer p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 
 /* Responsive Layout */
 @media (max-width: 768px) {
